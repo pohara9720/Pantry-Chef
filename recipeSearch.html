@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Gloria+Hallelujah|Kaushan+Script|Shadows+Into+Light" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/css/materialize.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta charset="UTF-8">
+    <title>Recipe Search</title>
+</head>
+
+<body>
+    <!-- Dropdown Structure -->
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="https://www.linkedin.com/in/patrick-o-hara-8b959b136/">Patrick</a></li>
+        <li><a href="https://www.facebook.com/elias.p.benson">Eli</a></li>
+        <li><a href="https://github.com/BigFos">Steven</a></li>
+        <li><a href="https://www.linkedin.com/in/michael-tolmie-83527537/">Michael</a></li>
+    </ul>
+    <nav>
+        <div class="nav-wrapper">
+            <div id="logo">Recipe Search
+                <ul class="right hide-on-down">
+                    <!-- Dropdown Trigger -->
+                    <li><a class="dropdown-button" href="#" data-activates="dropdown1"><i class="material-icons left">perm_identity</i></a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <div class="container">
+        <div class="row">
+            <div class="col s12 m3 l3 follow">
+                <div class="card">
+                    <div id="bar" class="card-content">
+                        <div id="h1">Ingredients I have</div>
+                        <div class="card">
+                            <div class="card-content black-text">
+                                <span class="card-title">Tell us what ingredients you have to work with!</span>
+                                <div class="input-group">
+                                    <span class="input-group-btn">
+      <a id="ingredientAdd" class="btn-floating btn-small waves-effect waves-light green"><i class="material-icons">add</i></a>
+      </span>
+                                    <input id="ingredientInput" type="text" class="form-control" placeholder="What ingredients do you have?">
+                                </div>
+                            </div>
+                        </div>
+                        <div id="h2">List of Ingredients</div>
+                        <div class="card">
+                            <div class="card-content black-text">
+                                <center>
+                                    <div>Ingredients</div>
+                                </center>
+                                <ul id="ingredientList">
+                                </ul>
+                                <div class="card-action center">
+                                    <a id="recipeButton" href="#">What Can I Make?</a>
+                                </div>
+                                <div>
+                                    <!-- <center> <a id="resetButton" href="#">New Search</a></center> -->
+                                    <p><a href="map.html" target="_blank" class="btn-floating btn-small waves-effect waves-light green"><i class="material-icons">location_on</i></a><a id="resetButton" class="btn-floating btn-small waves-effect waves-light green"><i class="material-icons">replay</i></a></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Grey navigation panel -->
+            </div>
+            <div id="recipeColumn" class="col s12 m9 l9">
+                <div id="h3">Recipes</div>
+                <div id="recipeCards">
+                </div>
+                <!-- Teal page content  -->
+            </div>
+        </div>
+    </div>
+    <!-- FireBase and Script Start -->
+    <script src="https://www.gstatic.com/firebasejs/4.0.0/firebase.js"></script>
+    <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.98.2/js/materialize.min.js"></script>
+    <script type="text/javascript" src="javascript/app.js"></script>
+</body>
+
+</html>

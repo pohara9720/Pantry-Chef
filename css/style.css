@@ -1,0 +1,123 @@
+
+body{
+background: url(http://www.foodwise.com.au/wp-content/uploads/2012/08/Background_ChoppingBoard21.jpg);
+}
+th{
+	text-align: center;
+
+}
+#na{
+	font-size: 50px;
+	font-family: 'Shadows Into Light', cursive;
+}
+#chef{
+	border-radius: 50%;
+	height: 50px;
+	width: 50px;
+}
+#overflow{
+	    max-height: 570px;
+    overflow: auto;
+}
+#h1, #h2, #h3{
+	font-size: 30px;
+	margin-top: 20px;
+	color: black; ;
+font-family: 'Shadows Into Light', cursive;
+}
+
+.btn-floating{
+	margin-right: 15px;
+}
+.card{
+	height:120% !important;
+}
+
+.follow{
+	float:left;
+	position: fixed;
+
+}
+
+#recipeColumn{
+	position:static;
+	float:right;
+	width: 65%;
+}
+img{
+	height:300px;
+	width:300px ;
+}
+#bar, .card-action{
+		background-color: #B7C68B;
+
+}
+.card,{
+	background-color: #DED29E;
+}
+
+#logo{
+	font-family: 'Kaushan Script', cursive;
+	font-size: 45px;
+	text-align: center;
+	color: black;
+
+}
+p,#recipeButton,#resetButton{
+	text-align: center;
+	font-family: 'Kaushan Script', cursive;
+	color: black;
+/*	margin-bottom: 15px;*/
+
+}
+#recipeCards{
+		background-color: #B3A580;
+
+}
+nav{
+	background-color:#F4F0CB;
+}
+.card-content{
+	background-color:#DED29E;
+}
+a{
+	color:black;
+}
+#amazon{
+	font-size: 20px;
+	font-family: 'Shadows Into Light', cursive;
+	color:black;
+
+}
+#list {
+	margin: 5px;
+	font-size: 20px;
+	font-family: 'Kaushan Script', cursive;
+	color:green;
+}
+#city{
+	margin:5px;
+}
+.tooltipped{
+	background-color: green;
+	font-family: 'Kaushan Script', cursive;
+
+}
+@media only screen and (min-device-width : 320px) and (max-device-width : 480px) {
+.follow{
+position:absolute;
+margin-left: -20px;
+}
+#recipeColumn{
+	clear:both;
+	margin-top: 500px;
+	width: 100%;
+}
+.container{
+	margin:0px;
+}
+#recipeCards{
+	width: 350px;
+	margin:0px;
+}
+}
